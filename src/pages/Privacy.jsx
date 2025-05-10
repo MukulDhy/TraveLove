@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -99,9 +100,18 @@ const PrivacyPolicy = () => {
             <p className="text-gray-700 mt-2">
               If you consent to receive SMS from Travelove, you agree to receive
               Flight Detail, Flight Confirmation, Flight Deal SMS from us. Reply
-              STOP to opt-out; Reply HELP for support; Message & data rates may
-              apply; Messaging frequency may vary. see our privacy policy
-              9102and terms and conditions.
+              STOP 🚫to opt-out. <br></br>
+              Reply HELP for 🆘 support. <br></br>
+              Message & data rates may apply. <br></br>
+              Messaging frequency may vary.(
+              <Link
+                className="text-blue-600 underline"
+                to={"https://cnmilaw.org/pdf/cmc_section/T5/9102.pdf"}
+                target="_blank"
+              >
+                9102
+              </Link>
+              ) see our privacy policy and terms and conditions.
             </p>
           </div>
         </div>
